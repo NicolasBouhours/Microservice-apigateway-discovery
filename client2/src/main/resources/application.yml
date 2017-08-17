@@ -1,0 +1,11 @@
+spring:
+    application:
+        name: test
+server:
+    port: 8081
+eureka:
+    client:
+        serviceUrl:
+            defaultZone: ${EUREKA_URI:http://localhost:8089/eureka}
+    instance:
+        preferIpAddress: true

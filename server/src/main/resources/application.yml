@@ -1,0 +1,19 @@
+server:
+    port: 8089
+
+eureka:
+    client:
+        registerWithEureka: false
+        fetchRegistry: false
+    server:
+        renewalPercentThreshold: 0.49
+    instance:
+        statusPageUrlPath: ${management.context-path}/info
+        healthCheckUrlPath: ${management.context-path}/health
+
+logging:
+    level:
+        com:
+            netflix:
+                eureka: OFF
+                discovery: OFF
